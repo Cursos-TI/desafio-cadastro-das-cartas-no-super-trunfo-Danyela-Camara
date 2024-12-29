@@ -19,13 +19,14 @@ int main() {
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
     
     /*Declarando as variáveis*/
-    char estado, codigo_da_carta[3];
+    char estado, codigo_da_carta[10];
     char nome_da_cidade[20];
     int populacao, numero_de_pontos_turisticos;
     float area, pib;
 
     /*Recebendo os dados do usuário para cada atributo*/
     printf("Digite o estado: \n");
+    
     scanf(" %c", &estado);
 
     printf("Digite o código da carta: \n");
@@ -45,14 +46,14 @@ int main() {
 
     printf("Digite o número de pontos turísticos: \n");
     scanf(" %d", &numero_de_pontos_turisticos);
- 
+
     /*Exibindo os dados na tela do usuário*/
     printf("\nEstado: %c ", estado);
     printf("\nNome da cidade: %s ", nome_da_cidade);
     printf("\nCódigo da carta: %s ", codigo_da_carta);
     printf("\nPopulação: %d ", populacao);
     printf("\nÁrea: %.2f km² ", area);
-    printf("\nPIB: %.2f ", pib);
+    printf("\nPIB: %.2f bilhões de reais ", pib);
     printf("\nNúmero de pontos turísticos: %d ", numero_de_pontos_turisticos);
     printf("\nCadastro finalizado com sucesso, bom jogo!\n");
 
